@@ -1,0 +1,146 @@
+ul.breadcrumb-items{
+  li{
+    a{
+      color: #333;
+      padding: 5px 10px;
+      text-decoration: none;
+      &:hover{
+        color: $primary;
+      }
+    }
+    & + li{
+      position: relative;
+      margin-left: 20px;
+      &:before{
+        position: absolute;
+        left: -15px;
+        top: 50%;
+        margin-top: -9px;
+        content: "\f0da";
+        font-size: 1rem;
+        color: #333;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        z-index: 99;
+      }
+    }
+  }
+}
+
+.single-product-wrapper{
+  .product-thumbnail-wrapper{
+    .product-thumbnail{
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      img{
+        height: inherit;
+      }
+    }
+    ul.product-thumbnail-items{
+      li.product-thumbnail-item{
+        width: 75px;
+        height: 75px;
+        margin-left: 5px;
+        overflow: hidden;
+        img{
+          max-width: 75px;
+          max-height: 75px;
+          border: 1px solid $primary;
+        }
+        a{
+          img{
+            max-width: 75px;
+            max-height: 75px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.product-content{
+  h4{
+    font-size: 1.2rem;
+    color: #333;
+  }
+  .product-ratting{
+    ul.product-ratting-items{
+      li{
+        a{
+          color: #333;
+          text-decoration: none;
+          font-size: .95rem;
+        }
+        & + li{
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .product-coupon-display{
+      .coupon-mark-new{
+        height: 22px;
+        background: #ff4747;
+        font-size: .9rem;
+        color: #fff;
+        font-weight: 300;
+        margin: 0 9px;
+        padding: 3px 10px;
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 22px;
+          top: 0;
+          left: -9px;
+          background: url(../../dist/img/single-product/zizak.png) 50% no-repeat;
+          background-size: contain;
+        }
+        &:after{
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 22px;
+          top: 0;
+          right: -9px;
+          background: url(../../dist/img/single-product/zizak.png) 50% no-repeat;
+          background-size: contain;
+          transform: rotate(180deg);
+        }
+      }
+      .product-coupon-more{
+        a{
+          color: $primary;
+        }
+      }
+  }
+  .product-sku{
+    p{
+      color: #333;
+      font-weight: bold;
+    }
+  }
+  .product-category, .product-tag{
+    font-weight: bold;
+    margin-bottom: 10px;
+    ul{
+      margin-left: 15px;
+      li{
+        a{
+          text-decoration: none;
+          font-weight: normal;
+          color: #444;
+          &:hover{
+            color: $primary;
+          }
+        }
+        & + li{
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}

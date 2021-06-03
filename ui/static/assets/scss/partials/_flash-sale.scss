@@ -1,0 +1,214 @@
+.flash-sale, .new-arrival-products, .store-lists{
+  .flash-sale-wrapper, .new-arrival-products-wrapper, .store-lists-wrapper{
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    .flash-sale-items{
+      li{
+        width: 20%;
+        & + li{
+          margin-left: 15px;
+        }
+        @media(max-width: 768px){
+          width: 46%;
+          display: inline-block;
+          &:nth-child(odd){
+            margin-left: 0;
+            margin-bottom: 30px;
+          }
+          &:last-child{
+            display: none;
+          }
+        }
+        @media(max-width: 420px){
+          width: 100%;
+          display: block;
+          & + li{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+  }
+}
+.deal-heading{
+  h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: "";
+      left: 0;
+      width: 85px;
+      height: 2px;
+      background: $primary;
+      top: 28px;
+    }
+  }
+  .view-all{
+    a{
+      text-decoration: none;
+      font-size: .9rem;
+      color: #b8b8b8;
+      font-weight: 600;
+      &:hover{
+        color: $primary;
+      }
+    }
+  }
+}
+
+.product-item{
+  position: relative;
+  background-color: #fff;
+  transition: all .2s ease-out;
+
+  .product-thumb{
+    overflow: hidden;
+    border-radius: 4px;
+    text-align: center;
+    position: relative;
+    height: 225px;
+    max-width: 225px;
+    min-width: 100%;
+    a{
+      display: block;
+    }
+    img{
+      max-width: 100%;
+      width: 100%;
+      min-height: 225px;
+      object-fit: cover;
+    }
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: #795345;
+      z-index: 1;
+      opacity: .04;
+      border-radius: 4px;
+    }
+  }
+  .product-content{
+    padding: 5px 10px;
+    h4{
+      a{
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-top: 6px;
+        color: #333;
+        text-decoration: none;
+        &:hover{
+          color: $primary;
+        }
+      }
+    }
+    .price-content{
+      margin-bottom: 10px;
+      .show-price{
+        font-size: 1rem;
+        font-weight: 700;
+        color: #333;
+        .discount-price{
+          color: #ddd;
+          text-decoration: line-through;
+        }
+      }
+      .price-discount{
+        background: #d0a32a52;
+        width: 60px;
+        height: 19px;
+        color: $primary;
+        text-align: center;
+        font-size: .85rem;
+      }
+    }
+    p{
+      color: #454545;
+      font-size: .8rem;
+    }
+    .product-actions{
+      height: 25px;
+      .product-qty{
+        input {
+          width: 40px;
+          height: 20px;
+          border: 0 solid $primary;
+          border-radius: 18px;
+          padding: 1px 0 1px 5px;
+          background: #d0a32a52;
+          color: $primary;
+          font-size: .8rem;
+
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+          opacity: 1;
+          background: transparent;
+          color: $primary;
+        }
+      }
+      .product-add-to-cart{
+        a{
+          background: $primary;
+          color: #fff;
+          padding: 3px 6px;
+          text-decoration: none;
+          font-size: .9rem;
+          border-radius: 3px;
+        }
+      }
+
+    }
+
+
+  }
+  .product-quick-view{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    max-height: 61%;
+    bottom: 72px;
+    height: 0;
+    transition: all ease-in 0.3s;
+    background: red;
+    z-index: 99999;
+    display: none;
+  }
+  &:hover{
+    box-shadow: 0 4px 20px 0 #e1e1e1;
+    .product-quick-view{
+      mix-blend-mode: multiply;
+      border: none;
+      display: block;
+      height: 150px;
+      padding: 10px 15px;
+
+
+    }
+
+  }
+}
+
+ul.new-arrival-product-items{
+  max-width: inherit;
+ // border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  background-color: #fff;
+  animation: fadeplp 1s;
+  width: 100%;
+  li{
+    width: 20%;
+    padding: 0;
+    border-bottom: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+  }
+
+}

@@ -1,0 +1,25 @@
+.banner-carusel{
+  width: 70%;
+  min-height: 305px;
+  height: 305px;
+  border-radius: 5px;
+  @media(max-width: 575px)  {
+    width: 100%;
+    min-height: 220px;
+    height: 220px;
+  }
+  .carousel.slide{
+    height: inherit;
+    .carousel-inner{
+      height: inherit;
+      .carousel-item{
+        height: inherit;
+        img{
+          height: inherit;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+}

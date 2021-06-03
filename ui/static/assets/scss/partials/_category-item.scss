@@ -1,0 +1,29 @@
+.category-item{
+  background: #f6f6f6;
+  padding: 5px 10px;
+  border-radius: 3px;
+  h4{
+    a{
+      font-size: 1rem;
+      margin-bottom: 12px;
+      font-weight: 600;
+      color: #d0a32a;
+    }
+  }
+  ul{
+    margin-bottom: 8px;
+    li{
+      max-width: 33.333%;
+      a{
+        img{
+          border-radius: 3px;
+        }
+      }
+      & + li{
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+

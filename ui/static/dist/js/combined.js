@@ -1,0 +1,2 @@
+"use strict";!function(e){e(".bands-slider").slick({centerMode:!0,slidesToShow:4,centerPadding:"60px",arrow:!0,responsive:[{breakpoint:768,settings:{arrows:!0,centerMode:!0,centerPadding:"40px",slidesToShow:3}},{breakpoint:480,settings:{arrows:!0,centerMode:!0,centerPadding:"40px",slidesToShow:1}}]}),e("#datepicker").datepicker({uiLibrary:"bootstrap4"}),e("#datepicker2").datepicker({uiLibrary:"bootstrap4"}),e("#datepicker3").datepicker({uiLibrary:"bootstrap4"})}(jQuery);
+//# sourceMappingURL=combined.js.map

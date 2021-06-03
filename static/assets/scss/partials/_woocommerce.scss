@@ -1,0 +1,28 @@
+.woocommerce-template{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .product-wrappers{
+    ul.product-items{
+
+      li{
+        width: 20%;
+        float: left;
+        .product-item{
+          margin: 10px 10px;
+        }
+        @media(max-width: 991px){
+          width: 33.33%;
+          float: left;
+        }
+        @media(max-width: 768px){
+          width: 50%;
+          float: left;
+        }
+        @media(max-width: 420px){
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}

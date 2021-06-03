@@ -1,0 +1,21 @@
+.about-content{
+  h3{
+    font-size: 1rem;
+    line-height: 60px;
+    font-weight: 800;
+    letter-spacing: 2.38px;
+    margin-bottom: 10px;
+  }
+  p{
+    font-size: 1.8rem;
+    font-family: $font_family;
+    line-height: 38px;
+    letter-spacing: 1.2px;
+    font-weight: 300;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 75px;
+  }
+}

@@ -1,0 +1,14 @@
+.daily-needs{
+  ul.daily-need-items{
+    li{
+      border-radius: 3px;
+      border: 1px solid #f8f8f8;
+      .product-add-to-cart{
+        a{
+          border-radius: 2px;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+}

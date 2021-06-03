@@ -1,0 +1,64 @@
+main{
+  background: #f2f2f2;
+  .categories-wrapper{
+    background: #fff;
+    margin-top: -40px;
+    margin-bottom: 40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    @media(max-width: 768px){
+      margin-top: 0px;
+      margin-bottom: 15px;
+    }
+    .category-heading {
+      background: #ddd;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 10px 20px;
+      span{
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+    }
+    ul.categories-items{
+      li{
+        a{
+          padding: 7px 20px;
+          text-decoration: none;
+          display: block;
+          font-size: 1rem;
+          color: #333;
+          font-weight: 400;
+          &:hover{
+            color: $primary;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .banner-content{
+    margin-top: -40px;
+    @media(max-width: 768px)  {
+      margin-top: 0;
+    }
+    .featured-deals{
+      ul{
+        li{
+          a{
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 600;
+            &:hover{
+              color: $primary;
+            }
+          }
+          & + li{
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
