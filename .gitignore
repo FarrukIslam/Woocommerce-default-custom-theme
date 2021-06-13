@@ -1,0 +1,15 @@
+# Node
+node_modules
+
+#Sass
+.sass-cache
+
+# Composer
+/vendor/*
+!vendor/.gitkeep
+
+# IDEs
+.idea/
+
+# Mac Files
+.DS_Store
