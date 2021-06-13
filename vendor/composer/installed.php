@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.3',
-        'version' => '1.0.3.0',
+        'pretty_version' => '1.0.4',
+        'version' => '1.0.4.0',
         'type' => 'wordpress-theme',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '5e5318b252d4586930a1bea425f77615a51951ea',
-        'name' => 'caredevs/binnash',
+        'reference' => '2b438fec5397ee1f31534911341ce16b02d72b4b',
+        'name' => 'caredevs/binnash-wp-theme',
         'dev' => true,
     ),
     'versions' => array(
-        'caredevs/binnash' => array(
-            'pretty_version' => '1.0.3',
-            'version' => '1.0.3.0',
+        'caredevs/binnash-wp-theme' => array(
+            'pretty_version' => '1.0.4',
+            'version' => '1.0.4.0',
             'type' => 'wordpress-theme',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '5e5318b252d4586930a1bea425f77615a51951ea',
+            'reference' => '2b438fec5397ee1f31534911341ce16b02d72b4b',
             'dev_requirement' => false,
         ),
         'composer/installers' => array(
