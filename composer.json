@@ -1,0 +1,11 @@
+{
+  "name": "caredevs/binnash",
+  "type": "wordpress-theme",
+  "description": "Beaver Builder enabled WordPress theme used for Caredevs client sites.",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "composer/installers": ">=1.0.12",
+    "htmlburger/carbon-fields": "*"
+  }
+}
+
